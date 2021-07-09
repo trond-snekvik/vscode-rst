@@ -1,8 +1,8 @@
 {
 	"name": "simple-rst",
-	"displayName": "reStructuredText Syntax highlight",
+	"displayName": "reStructuredText Syntax highlighting",
 	"description": "Syntax highlighting and document symbols for reStructuredText",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
