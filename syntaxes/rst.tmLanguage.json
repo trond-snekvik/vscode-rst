@@ -21,6 +21,8 @@
 		},
 		"inline-markup": {
 			"patterns": [
+				{"include": "#escaped"},
+				{"include": "#ignore"},
 				{"include": "#ref"},
 				{"include": "#literal"},
 				{"include": "#monospaced"},
@@ -30,8 +32,17 @@
 				{"include": "#list"},
 				{"include": "#macro"},
 				{"include": "#reference"},
-				{"include": "#escaped"},
 				{"include": "#footnote-ref"}
+			]
+		},
+		"ignore": {
+			"patterns": [
+				{"match": "'[`*]+'"},
+				{"match": "<[`*]+>"},
+				{"match": "{[`*]+}"},
+				{"match": "\\([`*]+\\)"},
+				{"match": "\\[[`*]+\\]"},
+				{"match": "\"[`*]+\""}
 			]
 		},
 		"table": {
