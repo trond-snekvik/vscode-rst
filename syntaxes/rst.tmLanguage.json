@@ -21,13 +21,14 @@
 		},
 		"inline-markup": {
 			"patterns": [
+				{"include": "#ref"},
+				{"include": "#literal"},
 				{"include": "#monospaced"},
+				{"include": "#citation"},
 				{"include": "#bold"},
 				{"include": "#italic"},
-				{"include": "#literal"},
 				{"include": "#list"},
 				{"include": "#macro"},
-				{"include": "#ref"},
 				{"include": "#reference"},
 				{"include": "#escaped"},
 				{"include": "#footnote-ref"}
@@ -69,8 +70,7 @@
 			]
 		},
 		"reference": {
-			"begin": "`",
-			"end": "`_|^\\s*$",
+			"match": "[\\w-]*[a-zA-Z\\d-]__?\\b",
 			"name": "entity.name.tag"
 		},
 		"macro": {
@@ -89,18 +89,24 @@
 			}
 		},
 		"monospaced": {
-			"begin": "(?<![\\`])``(?=[^\\s*`])",
-			"end": "(?<![\\`\\s])``|^\\s*$",
+			"begin": "(?<=[\\s\"'(\\[{<]|^)``[^\\s`]",
+			"end": "``|^\\s*$",
 			"name": "markup.inline.raw.string.markdown"
 		},
+		"citation": {
+			"begin": "(?<=[\\s\"'(\\[{<]|^)`[^\\s`]",
+			"end": "`_{,2}|^\\s*$",
+			"name": "entity.name.tag",
+			"applyEndPatternLast": 0
+		},
 		"bold": {
-			"begin": "(?<![\\\\*])\\*{2}(?=[^\\s*])",
-			"end": "(?<![\\\\*\\s])\\*{2}|^\\s*$",
+			"begin": "(?<=[\\s\"'(\\[{<]|^)\\*{2}[^\\s*]",
+			"end": "\\*{2}|^\\s*$",
 			"name": "markup.bold"
 		},
 		"italic": {
-			"begin": "(?<![\\\\*])\\*(?=[^\\s*])",
-			"end": "(?<![\\\\*\\s])\\*|^\\s*$",
+			"begin": "(?<=[\\s\"'(\\[{<]|^)\\*[^\\s*]",
+			"end": "\\*|^\\s*$",
 			"name": "markup.italic"
 		},
 		"escaped": {
