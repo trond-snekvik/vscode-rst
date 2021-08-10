@@ -137,11 +137,6 @@
 			"match": "^\\|\\s+",
 			"name": "keyword.control"
 		},
-		"block-comment": {
-			"begin": "^\\s*\\.{2}.*",
-			"while": "^[ \\t]+",
-			"name": "comment.block"
-		},
 		"raw-html": {
 			"begin": "^(\\s*)(\\.{2}\\s+raw\\s*::)\\s+(html)\\s*$",
 			"end": "^(?!\\1\\s|$)",
@@ -211,6 +206,11 @@
 				{"include": "#literal-block"},
 				{"include": "#block-comment"}
 			]
+		},
+		"block-comment": {
+			"begin": "^(\\s*)\\.{2}",
+			"end": "^(?!\\1[ \\t]|$)",
+			"name": "comment.block"
 		},
 		"literal-block": {
 			"begin": "(::)\\s*$",
