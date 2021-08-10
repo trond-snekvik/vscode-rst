@@ -33,5 +33,5 @@
 			"action": { "indent": "indent" }
 		}
 	],
-	"wordPattern": "[\\w-]+"
+	"wordPattern": "[\\w-]*\\w[\\w-]*"
 }
