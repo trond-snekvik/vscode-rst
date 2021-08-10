@@ -371,7 +371,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parametercodeblock.cpp"
@@ -387,7 +387,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.console"
@@ -403,7 +403,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.py"
@@ -419,7 +419,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.js"
@@ -435,7 +435,7 @@
 			"end": "^(?!\\1\\s+|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.yaml"
@@ -451,7 +451,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.cmake"
@@ -467,7 +467,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.kconfig"
@@ -483,7 +483,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.ruby"
@@ -499,7 +499,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.dts"
@@ -515,7 +515,7 @@
 			"end": "^(?!\\1\\s|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "keyword.control"
+					"name": "entity.name.class"
 				}
 			},
 			"patterns": [
