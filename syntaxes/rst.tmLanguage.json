@@ -2,19 +2,24 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"scopeName": "source.rst",
 	"patterns": [
-		{"include": "#title"},
-		{"include": "#inline-markup"},
-		{"include": "#blocks"},
-		{"include": "#anchor"},
-		{"include": "#table"},
-		{"include": "#simple-table"},
-		{"include": "#line-block"},
-		{"include": "#replace-include"},
-		{"include": "#footnote"},
-		{"include": "#block-comment"},
-		{"include": "#comment"}
+		{"include": "#body"}
 	],
 	"repository": {
+		"body": {
+			"patterns": [
+				{"include": "#title"},
+				{"include": "#inline-markup"},
+				{"include": "#anchor"},
+				{"include": "#line-block"},
+				{"include": "#replace-include"},
+				{"include": "#footnote"},
+				{"include": "#substitution"},
+				{"include": "#blocks"},
+				{"include": "#table"},
+				{"include": "#simple-table"},
+				{"include": "#options-list"}
+			]
+		},
 		"title": {
 			"match": "^(\\*{3,}|#{3,}|\\={3,}|~{3,}|\\+{3,}|-{3,}|`{3,})$",
 			"name": "markup.heading"
@@ -24,7 +29,6 @@
 				{"include": "#escaped"},
 				{"include": "#ignore"},
 				{"include": "#ref"},
-				{"include": "#inline-cpp"},
 				{"include": "#literal"},
 				{"include": "#monospaced"},
 				{"include": "#citation"},
@@ -35,22 +39,6 @@
 				{"include": "#reference"},
 				{"include": "#footnote-ref"}
 			]
-		},
-		"inline-cpp": {
-			"match": "(:cpp:\\w+:`)(.*?)(`\\\\?)",
-			"captures": {
-				"1":{
-					"name": "entity.name.tag"
-				},
-				"2": {
-					"patterns": [
-						{"include": "source.cpp"}
-					]
-				},
-				"3":{
-					"name": "entity.name.tag"
-				}
-			}
 		},
 		"ignore": {
 			"patterns": [
@@ -149,12 +137,8 @@
 			"match": "^\\|\\s+",
 			"name": "keyword.control"
 		},
-		"comment": {
-			"match": "^\\.{2} .*",
-			"name": "comment.line"
-		},
 		"block-comment": {
-			"begin": "^\\.{2}$",
+			"begin": "^\\s*\\.{2}.*",
 			"while": "^[ \\t]+",
 			"name": "comment.block"
 		},
@@ -193,15 +177,8 @@
 			}
 		},
 		"footnote": {
-			"match": "^\\s*(\\.{2})\\s+(\\[(?:[\\w\\.-]+|[#*])\\])\\s+",
-			"captures": {
-				"1": {
-					"name": "keyword.control"
-				},
-				"2": {
-					"name": "entity.name.tag"
-				}
-			}
+			"match": "^\\s*\\.{2}\\s+\\[(?:[\\w\\.-]+|[#*]|#\\w+)\\]\\s+",
+			"name": "entity.name.tag"
 		},
 		"footnote-ref": {
 			"match": "\\[(?:[\\w\\.-]+|[#*])\\]_",
