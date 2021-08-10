@@ -236,8 +236,13 @@
 			]
 		},
 		"literal-block": {
-			"begin": "^::\\s*$",
-			"end": "^(?![ \\t]|$)"
+			"begin": "(::)\\s*$",
+			"end": "^(?![ \\t]|$)",
+			"beginCaptures": {
+				"1": {
+					"name": "entity.name.class"
+				}
+			}
 		},
 		"block": {
 			"begin": "^(\\s*)(\\.{2}\\s+\\S+::)(.*)",
