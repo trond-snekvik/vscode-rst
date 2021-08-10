@@ -213,10 +213,13 @@
 			"name": "comment.block"
 		},
 		"literal-block": {
-			"begin": "(::)\\s*$",
-			"end": "^(?![ \\t]|$)",
+			"begin": "^(\\s*)(.*)(::)\\s*$",
+			"end": "^(?!\\1[ \\t]|$)",
 			"beginCaptures": {
-				"1": {
+				"2": {
+					"patterns": [{"include": "#inline-markup"}]
+				},
+				"3": {
 					"name": "entity.name.class"
 				}
 			}
