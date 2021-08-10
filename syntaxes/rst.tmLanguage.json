@@ -190,6 +190,10 @@
 			"match": "\\[(?:[\\w\\.-]+|[#*])\\]_",
 			"name": "entity.name.tag"
 		},
+		"substitution": {
+			"match": "^\\.{2}\\s*\\|([^|]+)\\|",
+			"name": "entity.name.tag"
+		},
 		"options-list": {
 			"match": "^((?:-\\w|--[\\w-]+|/\\w+)(?:,? ?[\\w-]+)*)(?:  |\\t|$)",
 			"name": "variable.parameter"
