@@ -11,7 +11,7 @@
 	],
 	"license": "MIT",
 	"activationEvents": [
-		"onLanguage:rst"
+		"onLanguage:restructuredtext"
 	],
 	"repository": {
 		"type": "github",
@@ -28,7 +28,7 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "rst",
+				"id": "restructuredtext",
 				"aliases": [
 					"reStructuredText"
 				],
@@ -40,7 +40,7 @@
 		],
 		"grammars": [
 			{
-				"language": "rst",
+				"language": "restructuredtext",
 				"scopeName": "source.rst",
 				"path": "./syntaxes/rst.tmLanguage.json"
 			}
