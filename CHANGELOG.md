@@ -1,3 +1,14 @@
+# v1.4.0 Compatibility with LeXtudio's extension
+
+- Changes the reStructuredText language identifier to `restructuredtext`
+- Removes `*` from autoclosing pairs
+- Disables the symbol provider if the LeXtudio extension is installed
+
+
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/7.
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/8.
+
+
 # v1.3.0: Sphinx domains
 
 - Adds support for Sphinx domains.
