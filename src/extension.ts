@@ -27,7 +27,7 @@ class RstSectionProvider implements vscode.DocumentSymbolProvider {
 				prev = line;
 				continue;
 			}
-			if (!line.match(new RegExp(`^(${underlines.map(char => char + '{' + prev.length + '}').join('|')})\\s*$`))) {
+			if (!line.match(new RegExp(`^(${underlines.map(char => char + '{' + prev.length + ',}').join('|')})\\s*$`))) {
 				prev = line;
 				continue;
 			}
