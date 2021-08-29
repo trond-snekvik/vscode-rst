@@ -75,7 +75,7 @@ class RstSectionProvider implements vscode.DocumentSymbolProvider {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-	context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider({language: 'rst'}, new RstSectionProvider()));
+	context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider({language: 'restructuredtext'}, new RstSectionProvider()));
 }
 
 export function deactivate() {}
