@@ -12,8 +12,11 @@ interface Section {
 
 class RstSectionProvider implements vscode.DocumentSymbolProvider {
 	provideDocumentSymbols(document: vscode.TextDocument, token: vscode.CancellationToken): vscode.ProviderResult<vscode.SymbolInformation[] | vscode.DocumentSymbol[]> {
-		if (vscode.extensions.getExtension('lextudio.restructuredtext')) {
-			return;
+		const extension = vscode.extensions.getExtension('lextudio.restructuredtext');
+		if (extension) {
+			if (compareVersions(extension.packageJSON.version, '164.0.0') < 0) {
+				return;
+			}
 		}
 
 		const hierarchy = new Array<string>();
