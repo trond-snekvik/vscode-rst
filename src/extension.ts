@@ -13,7 +13,7 @@ class RstSectionProvider implements vscode.DocumentSymbolProvider {
 	provideDocumentSymbols(document: vscode.TextDocument, token: vscode.CancellationToken): vscode.ProviderResult<vscode.SymbolInformation[] | vscode.DocumentSymbol[]> {
 		const extension = vscode.extensions.getExtension('lextudio.restructuredtext');
 		if (extension) {
-			if (compareVersions(extension.packageJSON.version, '162.0.0') < 0) {
+			if (compareVersions(extension.packageJSON.version, '163.0.0') < 0) {
 				return;
 			}
 		}
