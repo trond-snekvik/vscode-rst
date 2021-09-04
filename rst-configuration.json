@@ -28,7 +28,7 @@
 	"autoCloseBefore": ":})>`\\n ",
 	"onEnterRules": [
 		{
-			"beforeText": "^\\s*\\.\\. *$|::(\\s|$)",
+			"beforeText": "^\\s*\\.\\. *$|(?<!:)::(\\s|$)",
 			"action": { "indent": "indent" }
 		}
 	],
