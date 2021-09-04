@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import * as compareVersions from 'compare-versions';
 
 const underlines = ['\\=', '-', '`', ':', '\'', '"', '~', '\\^', '_', '\\*', '\\+', '#', '<', '>'];
 interface Section {
