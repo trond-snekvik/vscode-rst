@@ -139,7 +139,7 @@
 		},
 		"raw-html": {
 			"begin": "^(\\s*)(\\.{2}\\s+raw\\s*::)\\s+(html)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
@@ -209,12 +209,12 @@
 		},
 		"block-comment": {
 			"begin": "^(\\s*)\\.{2}",
-			"end": "^(?!\\1[ \\t]|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"name": "comment.block"
 		},
 		"literal-block": {
 			"begin": "^(\\s*)(.*)(::)\\s*$",
-			"end": "^(?!\\1[ \\t]|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"patterns": [{"include": "#inline-markup"}]
@@ -226,7 +226,7 @@
 		},
 		"block": {
 			"begin": "^(\\s*)(\\.{2}\\s+\\S+::)(.*)",
-			"end": "^(?!\\1[ \\t]|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -282,7 +282,7 @@
 		},
 		"domain-cpp": {
 			"begin": "^(\\s*)(\\.{2}\\s+(?:cpp|c):(?:class|struct|function|member|var|type|enum|enum-struct|enum-class|enumerator|union|concept)::)\\s*(?:(@\\w+)|(.*))",
-			"end": "^(?!\\1[ \\t]|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -303,7 +303,7 @@
 		},
 		"domain-py": {
 			"begin": "^(\\s*)(\\.{2}\\s+py:(?:module|function|data|exception|class|attribute|property|method|staticmethod|classmethod|decorator|decoratormethod)::)\\s*(.*)",
-			"end": "^(?!\\1[ \\t]|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -321,7 +321,7 @@
 		},
 		"domain-auto": {
 			"begin": "^(\\s*)(\\.{2}\\s+auto(?:class|module|exception|function|decorator|data|method|attribute|property)::)\\s*(.*)",
-			"end": "^(?!\\1[ \\t]|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class.py"
@@ -371,7 +371,7 @@
 		},
 		"code-block-cpp": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(c|cpp|C|C++|CPP|Cpp)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -387,7 +387,7 @@
 		},
 		"code-block-console": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(console|shell|bash)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -403,7 +403,7 @@
 		},
 		"code-block-py": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(python)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -419,7 +419,7 @@
 		},
 		"code-block-javascript": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(javascript)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -435,7 +435,7 @@
 		},
 		"code-block-yaml": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(ya?ml)\\s*$",
-			"end": "^(?!\\1\\s+|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -451,7 +451,7 @@
 		},
 		"code-block-cmake": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(cmake)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -467,7 +467,7 @@
 		},
 		"code-block-kconfig": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*([kK]config)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -483,7 +483,7 @@
 		},
 		"code-block-ruby": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(ruby)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -499,7 +499,7 @@
 		},
 		"code-block-dts": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(dts|DTS|devicetree)\\s*$",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
@@ -515,7 +515,7 @@
 		},
 		"code-block": {
 			"begin": "^(\\s*)(\\.{2}\\s+code-block::)",
-			"end": "^(?!\\1\\s|$)",
+			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "entity.name.class"
