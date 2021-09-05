@@ -220,7 +220,7 @@
 					"patterns": [{"include": "#inline-markup"}]
 				},
 				"3": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				}
 			}
 		},
@@ -229,7 +229,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable"
@@ -285,7 +285,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "entity.name.tag"
@@ -306,7 +306,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"patterns": [
@@ -324,7 +324,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class.py"
+					"name": "keyword.control.py"
 				},
 				"3": {
 					"patterns": [
@@ -342,7 +342,7 @@
 			"end": "^(?!\\1[ \\t]|$)",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"patterns": [
@@ -374,7 +374,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parametercodeblock.cpp"
@@ -390,7 +390,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.console"
@@ -406,7 +406,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.py"
@@ -422,7 +422,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.js"
@@ -438,7 +438,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.yaml"
@@ -454,7 +454,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.cmake"
@@ -470,7 +470,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.kconfig"
@@ -486,7 +486,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.ruby"
@@ -502,7 +502,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				},
 				"3": {
 					"name": "variable.parameter.codeblock.dts"
@@ -518,7 +518,7 @@
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
-					"name": "entity.name.class"
+					"name": "keyword.control"
 				}
 			},
 			"patterns": [
