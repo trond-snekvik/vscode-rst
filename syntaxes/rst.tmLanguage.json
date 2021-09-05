@@ -107,7 +107,7 @@
 		"monospaced": {
 			"begin": "(?<=[\\s\"'(\\[{<]|^)``[^\\s`]",
 			"end": "``|^\\s*$",
-			"name": "markup.inline.raw.string.markdown"
+			"name": "string.interpolated"
 		},
 		"citation": {
 			"begin": "(?<=[\\s\"'(\\[{<]|^)`[^\\s`]",
