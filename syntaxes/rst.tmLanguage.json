@@ -243,10 +243,10 @@
 		"block-param": {
 			"patterns": [
 				{
-					"match": "^\\s*(:param\\s+(.+?):)(?:\\s|$)",
+					"match": "(:param\\s+(.+?):)(?:\\s|$)",
 					"captures": {
 						"1": {
-							"name": "markup.heading"
+							"name": "keyword.control"
 						},
 						"2": {
 							"name": "variable.parameter"
@@ -254,10 +254,10 @@
 					}
 				},
 				{
-					"match": "^\\s*(:.+?:)(?:$|\\s(.*))",
+					"match": "(:.+?:)(?:$|\\s+(.*))",
 					"captures": {
 						"1": {
-							"name": "markup.heading"
+							"name": "keyword.control"
 						},
 						"2": {
 							"patterns": [
