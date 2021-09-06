@@ -1,3 +1,15 @@
+# v1.5.0 Highlighting accuracy improvements
+
+- Adds ^, :, ", _ and ' to the list of characters that are recognized as headers
+- Checking LeXtudio's extension version before disabling symbol provider
+- Fix issues with directives ending too early
+- Use more commonly available symbols for directives, block parameters and inline monospace strings
+
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/12.
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/13.
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/14.
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/15.
+
 # v1.4.0 Compatibility with LeXtudio's extension
 
 - Changes the reStructuredText language identifier to `restructuredtext`
