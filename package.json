@@ -54,10 +54,9 @@
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
-		"lint": "eslint src --ext ts",
+		"lint": "eslint src --ext ts,json",
 		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./scripts/validate_schema.js"
 	},
 	"devDependencies": {
 		"@types/compare-versions": "^3.3.0",
@@ -69,6 +68,7 @@
 		"@typescript-eslint/parser": "^3.8.0",
 		"eslint": "^7.6.0",
 		"glob": "^7.1.6",
+		"jsonschema": "^1.4.0",
 		"mocha": "^8.0.1",
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.4.0"
