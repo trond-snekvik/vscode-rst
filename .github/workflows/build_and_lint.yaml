@@ -1,0 +1,33 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+name: Build, lint and package
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+    - name: Build extension
+      run: npm install
+    - name: Run ESLint
+      run: npm run lint
+    - name: Package extension
+      uses: lannonbr/vsce-action@master
+      with:
+        args: "package --githubBranch main"
+    - name: Upload package
+      uses: actions/upload-artifact@v2
+      with:
+        name: Packaged extension
+        path: simple-rst-*.vsix
