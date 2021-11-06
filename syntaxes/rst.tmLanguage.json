@@ -201,6 +201,7 @@
 				{"include": "#code-block-ruby"},
 				{"include": "#code-block-dts"},
 				{"include": "#code-block"},
+				{"include": "#doctest-block"},
 				{"include": "#raw-html"},
 				{"include": "#block"},
 				{"include": "#literal-block"},
@@ -523,6 +524,19 @@
 			},
 			"patterns": [
 				{"include": "#block-param"}
+			]
+		},
+		"doctest-block": {
+			"begin": "^(\\s*)(\\.{2}\\s+doctest::)\\s*$",
+			"while": "^\\1(?=\\s)|^\\s*$",
+			"beginCaptures": {
+				"2": {
+					"name": "keyword.control"
+				}
+			},
+			"patterns": [
+				{"include": "#block-param"},
+				{"include": "source.python"}
 			]
 		}
 	}
