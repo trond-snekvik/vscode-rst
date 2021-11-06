@@ -263,7 +263,7 @@
 						"2": {
 							"patterns": [
 								{
-									"match": "(0x[a-fA-F\\d]+|\\d)",
+									"match": "\\b(0x[a-fA-F\\d]+|\\d+)\\b",
 									"name": "constant.numeric"
 								},
 								{"include": "#inline-markup"}
