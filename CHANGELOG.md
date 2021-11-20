@@ -1,3 +1,13 @@
+# v1.5.1 Highlight tweaks
+
+- Removes ` and | from bracket types, preventing the bracket pair colorizer from breaking
+- Only highlight numbers if they're not part of a larger word
+- Highlight `doctest` blocks as python code
+
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/16
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/18
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/19
+
 # v1.5.0 Highlighting accuracy improvements
 
 - Adds ^, :, ", _ and ' to the list of characters that are recognized as headers
