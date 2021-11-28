@@ -209,9 +209,16 @@
 			]
 		},
 		"block-comment": {
-			"begin": "^(\\s*)\\.{2}",
-			"while": "^\\1(?=\\s)|^\\s*$",
-			"name": "comment.block"
+			"begin": "^(\\s*)\\.{2}(\\s+|$)",
+			"end": "^(?=\\S)|^\\s*$",
+			"name": "comment.block",
+			"patterns": [
+				{
+					"begin": "^\\s{3,}(?=\\S)",
+					"while": "^\\s{3}.*|^\\s*$",
+					"name": "comment.block"
+				}
+			]
 		},
 		"literal-block": {
 			"begin": "^(\\s*)(.*)(::)\\s*$",
