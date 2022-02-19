@@ -378,7 +378,7 @@
 					"name": "keyword.control"
 				},
 				"4": {
-					"name": "variable.parametercodeblock.cpp"
+					"name": "variable.parameter.codeblock.cpp"
 				}
 			},
 			"patterns": [
