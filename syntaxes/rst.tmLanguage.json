@@ -371,7 +371,7 @@
 			}
 		},
 		"code-block-cpp": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(c|cpp|C|C++|CPP|Cpp)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(c|c\\+\\+|cpp|C|C\\+\\+|CPP|Cpp)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
