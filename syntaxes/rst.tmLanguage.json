@@ -371,13 +371,13 @@
 			}
 		},
 		"code-block-cpp": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(c|c\\+\\+|cpp|C|C\\+\\+|CPP|Cpp)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(c|c\\+\\+|cpp|C|C\\+\\+|CPP|Cpp)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parametercodeblock.cpp"
 				}
 			},
@@ -387,13 +387,13 @@
 			]
 		},
 		"code-block-console": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(console|shell|bash)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(console|shell|bash)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.console"
 				}
 			},
@@ -403,13 +403,13 @@
 			]
 		},
 		"code-block-py": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(python)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(python)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.py"
 				}
 			},
@@ -419,13 +419,13 @@
 			]
 		},
 		"code-block-javascript": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(javascript)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(javascript)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.js"
 				}
 			},
@@ -435,13 +435,13 @@
 			]
 		},
 		"code-block-yaml": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(ya?ml)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(ya?ml)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.yaml"
 				}
 			},
@@ -451,13 +451,13 @@
 			]
 		},
 		"code-block-cmake": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(cmake)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(cmake)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.cmake"
 				}
 			},
@@ -467,13 +467,13 @@
 			]
 		},
 		"code-block-kconfig": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*([kK]config)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*([kK]config)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.kconfig"
 				}
 			},
@@ -483,13 +483,13 @@
 			]
 		},
 		"code-block-ruby": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(ruby)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(ruby)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.ruby"
 				}
 			},
@@ -499,13 +499,13 @@
 			]
 		},
 		"code-block-dts": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)\\s*(dts|DTS|devicetree)\\s*$",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(dts|DTS|devicetree)\\s*$",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
 				},
-				"3": {
+				"4": {
 					"name": "variable.parameter.codeblock.dts"
 				}
 			},
@@ -515,7 +515,7 @@
 			]
 		},
 		"code-block": {
-			"begin": "^(\\s*)(\\.{2}\\s+code-block::)",
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)",
 			"while": "^\\1(?=\\s)|^\\s*$",
 			"beginCaptures": {
 				"2": {
