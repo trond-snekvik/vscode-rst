@@ -1,3 +1,13 @@
+# v1.5.2 Code directive fixes
+
+- Fixes C++ `code-block` directive not being detected
+- Recognize `code` directive.
+
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/27
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/28
+
+Thanks to @R1dO for reports and fixes.
+
 # v1.5.1 Highlight tweaks
 
 - Removes ` and | from bracket types, preventing the bracket pair colorizer from breaking
