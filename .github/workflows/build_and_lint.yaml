@@ -25,6 +25,8 @@ jobs:
       run: npm run lint
     - name: Validate json schema
       run: npm run test
+    - name: Test grammar rules
+      run: npm run test-grammar      
       env:
         GITHUB: 1
     - name: Package extension
