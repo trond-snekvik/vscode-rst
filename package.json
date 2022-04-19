@@ -56,7 +56,8 @@
 		"compile": "tsc -p ./",
 		"lint": "eslint src --ext ts,json",
 		"watch": "tsc -watch -p ./",
-		"test": "node ./scripts/validate_schema.js"
+		"test": "node ./scripts/validate_schema.js",
+		"test-grammar": "vscode-tmgrammar-test -c -s source.rst -g syntaxes/rst.tmLanguage.json -t \"syntaxes/**/*.rst\""
 	},
 	"devDependencies": {
 		"@types/compare-versions": "^3.3.0",
@@ -71,7 +72,8 @@
 		"jsonschema": "^1.4.0",
 		"mocha": "^8.0.1",
 		"typescript": "^3.8.3",
-		"vscode-test": "^1.4.0"
+		"vscode-test": "^1.4.0",
+		"vscode-tmgrammar-test": "^0.0.11"
 	},
 	"dependencies": {
 		"compare-versions": "^3.6.0"
