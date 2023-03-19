@@ -60,7 +60,11 @@ class RstSectionProvider implements vscode.DocumentSymbolProvider {
 					}
 				}
 
-				stack[stack.length - 1].children.push(section);
+				if (stack.length === 0) {
+					roots.push(section);
+				} else {
+					stack[stack.length - 1].children.push(section);
+				}
 			} else {
 				roots.push(section);
 				hierarchy.push(section.type);
