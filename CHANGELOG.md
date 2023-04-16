@@ -1,3 +1,18 @@
+# v1.5.3 Comments and headings fixes
+
+- Empty top level directives no longer break the header indexer
+- Block comments without a space after the `..` are no longer recognized.
+- Empty comments don't cause indented text to be highlighted as comments
+
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/24
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/25
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/31
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/32
+
+Thanks to @lextm, @ssbarnea and @Xeverous for contributions to issue tracking.
+Thanks to @alcarney for contributing a test suite.
+Thanks to @sgryjp for fixing the empty top level directories.
+
 # v1.5.2 Code directive fixes
 
 - Fixes C++ `code-block` directive not being detected
