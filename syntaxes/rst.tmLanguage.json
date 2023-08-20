@@ -234,7 +234,7 @@
 		},
 		"block": {
 			"begin": "^(\\s*)(\\.{2}\\s+\\S+::)(.*)",
-			"while": "^\\1(?=\\s)|^\\s*$",
+			"end": "^(?!\\1\\s|\\s*$)",
 			"beginCaptures": {
 				"2": {
 					"name": "keyword.control"
