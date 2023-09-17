@@ -1,3 +1,16 @@
+# v1.5.4 Deeply nested blocks and options lists
+
+- Deeply nested blocks are now rendered correctly
+- Options list regex no longer causes catastrophic backtracking
+- Angle brackets and aliases have been fixed in the options list
+
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/37
+Fixes https://github.com/trond-snekvik/vscode-rst/issues/40
+
+Thanks to @asottile for contributing a fix for options lists.
+Thanks to @chen19901225 and @asottile for reporting issues.
+Thanks to @lextm for contributions to issue tracking.
+
 # v1.5.3 Comments and headings fixes
 
 - Empty top level directives no longer break the header indexer
