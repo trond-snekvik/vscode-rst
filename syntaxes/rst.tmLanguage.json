@@ -184,7 +184,7 @@
 			"name": "entity.name.tag"
 		},
 		"options-list": {
-			"match": "^((?:-\\w|--[\\w-]+|/\\w+)(?:,? ?[\\w-]+)*)(?:  |\\t|$)",
+			"match": "(?:(?:^|,\\s+)(?:[-+]\\w|--?[a-zA-Z][\\w-]+|/\\w+)(?:[ =](?:\\w+|<[^<>]+?>))?)+(?=  |\\t|$)",
 			"name": "variable.parameter"
 		},
 		"blocks": {
