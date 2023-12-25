@@ -192,6 +192,7 @@
 				{"include": "#domains"},
 				{"include": "#doctest"},
 				{"include": "#code-block-cpp"},
+				{"include": "#code-block-java"},
 				{"include": "#code-block-py"},
 				{"include": "#code-block-console"},
 				{"include": "#code-block-javascript"},
@@ -391,6 +392,22 @@
 			"patterns": [
 				{"include": "#block-param"},
 				{"include": "source.cpp"}
+			]
+		},
+		"code-block-java": {
+			"begin": "^(\\s*)(\\.{2}\\s+(code|code-block)::)\\s*(java|Java)\\s*$",
+			"while": "^\\1(?=\\s)|^\\s*$",
+			"beginCaptures": {
+				"2": {
+					"name": "keyword.control"
+				},
+				"4": {
+					"name": "variable.parameter.codeblock.java"
+				}
+			},
+			"patterns": [
+				{"include": "#block-param"},
+				{"include": "source.java"}
 			]
 		},
 		"code-block-console": {
